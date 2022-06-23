@@ -67,7 +67,7 @@ function displayWeather (response) {
 let h1 = document.querySelector("h1");
 h1.innerHTML = response.data.name;
 document.querySelector("#temp-now").innerHTML = Math.round(response.data.main.temp);
-document.querySelector("#pressure").innerHTML = response.data.main.pressure;
+
 document.querySelector("#humidity").innerHTML = response.data.main.humidity;
 document.querySelector("#wind").innerHTML = response.data.wind.speed;
 let iconElement = document.querySelector("#icon");
